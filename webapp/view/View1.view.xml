@@ -1,0 +1,21 @@
+<mvc:View controllerName="saasdemo.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:main="sap.ui.webc.main">
+    
+    <Page id="page" showHeader="false">
+        <content>
+            <main:Toast id="toast" duration="4000"/>
+            <IllustratedMessage
+                id="im"
+                illustrationSize="{/sSelectedSize}"
+                illustrationType="{/sSelectedType}"
+                enableVerticalResponsiveness="{/sSelectedEVS}"
+                title="Hello SaaS Demo!!!">
+                <additionalContent>
+                    <Button text="Перевірити субдомен"  press="getSubdomen"/>
+                </additionalContent>
+		</IllustratedMessage>
+        </content>
+    </Page>
+</mvc:View>
